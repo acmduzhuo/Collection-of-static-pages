@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英雄联盟官网FANART创作馆</title>
+    <style>
+        *{
+            margin: 0;
+            /* 通配符 */
+        }
+        .wrap{
+            width: 750px;
+            height: 340px;
+            /* 截图工具测量尺寸 */
+            background-color: pink;
+            margin: 100px auto;
+            /* 上下左右 */
+        }
+        .cont{
+            float: left;
+            position: relative;
+            width: 180px;
+            height: 160px;
+            background-color: aqua;
+            overflow: hidden;
+            margin: 3px;
+        }
+        .cont:hover .hide{/*当鼠标移入到cont后，就让hide执行里面的代码*/
+            bottom: 0;
+        }
+        .cont:hover .images{
+            transform: scale(1.3);
+            /* CSS3的变换属性 */
+        }
+        .images{
+            width: 180px;
+            height: 160px;
+            /* 设置为与父元素相同尺寸 */
+            transition: .5s;
+        }
+        .hide{
+            position: absolute;
+            /* 绝对定位 
+            如果父元素没有相对属性，则会一直向上寻找，直到浏览器
+            */
+            bottom: -60px;
+            left: 0;
+            width: 100%;
+            /* 继承父级元素比例 */
+            height: 60px;
+            background-color: rgba(0, 0, 0, .7);
+            /* 红色0-255 绿色0-255 蓝色0-255 透明度0-1 */
+            color: #ffffff;
+            transition: .5S;
+            /* CSS3的动画过渡效果 */
+        }
+        .h-cont{
+            padding: 8px;
+            /* 内边距 上下 左右*/
+        }
+        .h-title{
+            margin-top: 6px;
+            font-size: 8px;
+            /* 字体大小 */
+        }
+        .h-img{
+            border-radius: 50%;
+            /* CSS3圆角属性 */
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            /* 基线对齐方式 居中 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cont">
+            <img class="images" src="./images/1.jpg">
+            <div class="hide">
+                <div class="h-cont">
+                    <h5>莉莉娅</h5>
+                    <div class="h-title">
+                        <img class = "h-img" src="./images/01.jpg" >
+                        <span>鶸碳基生物圈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont">
+            <img class="images" src="./images/2.jpg">
+            <div class="hide">
+                <div class="h-cont">
+                    <h5>莉莉娅</h5>
+                    <div class="h-title">
+                        <img class = "h-img" src="./images/02.jpg" >
+                        <span>鶸碳基生物圈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont">
+            <img class="images" src="./images/3.jpg">
+            <div class="hide">
+                <div class="h-cont">
+                    <h5>莉莉娅</h5>
+                    <div class="h-title">
+                        <img class = "h-img" src="./images/03.jpg" >
+                        <span>鶸碳基生物圈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont">
+            <img class="images" src="./images/4.jpg">
+            <div class="hide">
+                <div class="h-cont">
+                    <h5>莉莉娅</h5>
+                    <div class="h-title">
+                        <img class = "h-img" src="./images/04.jpg" >
+                        <span>鶸碳基生物圈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont">
+            <img class="images" src="./images/5.jpg">
+            <div class="hide">
+                <div class="h-cont">
+                    <h5>莉莉娅</h5>
+                    <div class="h-title">
+                        <img class = "h-img" src="./images/05.jpg" >
+                        <span>鶸碳基生物圈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont">
+            <img class="images" src="./images/6.jpg">
+            <div class="hide">
+                <div class="h-cont">
+                    <h5>莉莉娅</h5>
+                    <div class="h-title">
+                        <img class = "h-img" src="./images/06.jpg" >
+                        <span>鶸碳基生物圈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont">
+            <img class="images" src="./images/7.jpg">
+            <div class="hide">
+                <div class="h-cont">
+                    <h5>莉莉娅</h5>
+                    <div class="h-title">
+                        <img class = "h-img" src="./images/07.jpg" >
+                        <span>鶸碳基生物圈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont">
+            <img class="images" src="./images/8.jpg">
+            <div class="hide">
+                <div class="h-cont">
+                    <h5>莉莉娅</h5>
+                    <div class="h-title">
+                        <img class = "h-img" src="./images/08.jpg" >
+                        <span>鶸碳基生物圈</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
