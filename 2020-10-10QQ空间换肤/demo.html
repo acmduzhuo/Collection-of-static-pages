@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ空间换肤</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("./image/f.jpg") no-repeat fixed center;
+            /* 相对路径 */
+            /* 绝对路径/image */
+        }
+        img{
+            border: 0;
+            /* 去掉图片边框 */
+        }
+        .qq{
+            width: 100%;
+            /* 和浏览器一样宽 */
+            height: 130px;
+            background: url("./image/u1.jpg") no-repeat;
+            background-size: 100% 100%;
+            display: none;
+        }
+        .con{
+            width: 900px;
+            height: 70px;
+            /* background-color: pink; */
+            margin: 0 auto;
+            /* 上下左右 */
+            padding-top: 30px;
+        }
+        .con ul{
+            margin: 0 auto;
+        }
+        .con ul li{
+            float: left;
+            list-style-type: none;
+            /* 去掉默认的黑点 */
+            margin-right: 10px;
+        }
+        .btn{
+            width: 50px;
+            height: 50px;
+            /* background-color: red; */
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .btn a{
+            width: 50px;
+            height: 50px;
+            display: block;
+            background: url("./image/upseek.png") no-repeat;
+        }
+        .btn a:hover{
+            background-position: 0 -65px;
+            /* 设置背景图像的起始位置 */
+        }
+    </style>
+</head>
+<body>
+    <div class="qq">
+        <div class="con">
+            <!-- 盒子 -->
+            <ul id="qqul">
+                <li><a href="#"><img width="130px" height="75px" src="./image/a.jpg"></a></li>
+                <li><a href="#"><img width="130px" height="75px" src="./image/0.jpg"></a></li>
+                <li><a href="#"><img width="130px" height="75px" src="./image/c.jpg"></a></li>
+                <li><a href="#"><img width="130px" height="75px" src="./image/e.jpg"></a></li>
+                <li><a href="#"><img width="130px" height="75px" src="./image/d.jpg"></a></li>
+                <li><a href="#"><img width="130px" height="75px" src="./image/f.jpg"></a></li>
+            </ul>
+        </div>
+    </div>
+<div class="btn">
+    <a href="#" id="btn"></a>
+</div>
+</body>
+</html>
